@@ -1,0 +1,15 @@
+<p>chatroom works!</p>
+
+<div class="messagesContainer">
+  <div class="messages" *ngFor="let message of messages; let i=index;">
+    <p class="username" *ngIf="!message.ownMessage">{{ message.username }}</p>
+    <div class="chatbubble" *ngIf="message.ownMessage" style="float: right;">{{ message.message }}</div>
+    <div class="chatbubble" *ngIf="!message.ownMessage">{{ message.message }}</div>
+  </div>
+</div>
+
+
+<form (ngSubmit)="onSubmitMessage()" [formGroup]="messageForm" class="form-control">
+  <input type="text" name="message" id="message" formControlName="message" class="form-control" [required]="true">
+  <input type="submit" value="Submit" class="btn btn-primary">
+</form>

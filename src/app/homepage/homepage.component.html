@@ -1,0 +1,14 @@
+<p>homepage works!</p>
+
+<form (ngSubmit)="onSubmitDetailsForm()" [formGroup]="detailsForm" class="form-control">
+  <label for="username">Username: </label>
+  <input type="text" name="username" id="username" formControlName="username" class="form-control">
+  <br>
+
+  <label for="roomname">Roomname: </label>
+  <input type="text" name="roomname" id="roomname" formControlName="roomname" class="form-control">
+  <br>
+
+  <input type="submit" value="Submit">
+</form>
+

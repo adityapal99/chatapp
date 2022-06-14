@@ -1,0 +1,53 @@
+/* General CSS Setup */
+body{
+  background-color: lightblue;
+  font-family: "Ubuntu-Italic", "Lucida Sans", helvetica, sans;
+}
+
+
+
+
+/* chat bubble container */
+.chatbubble{
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin: 0.5em 0.2em;
+  border-radius: 0.5em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.messagesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border: 1px solid gray;
+  border-radius: 4px;
+
+  padding: 10px;
+
+
+}
+
+.messagesContainer .username {
+  font-size: 12px;
+  background-color: #ffffff;
+  position: relative;
+  bottom: -30px;
+  z-index: 1;
+  display: block;
+  width: fit-content;
+  margin-left: 10px;
+  margin-top: -30px;
+  padding: 0px 5px;
+}
